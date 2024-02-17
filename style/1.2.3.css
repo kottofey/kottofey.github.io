@@ -1,0 +1,204 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Regular-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Bold-webfont.woff') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Italic-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-BoldItalic-webfont.woff') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.return_to_main {
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.image {
+    height: inherit;
+}
+
+.logo {
+    height: 15px;
+    padding: 5px;
+}
+
+.div {
+    border: 20px;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgb(0 0 0 / 20%);
+    color: rgb(0 0 0);
+    overflow: visible;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    width: 60%;
+}
+
+hr::after {
+    background: #EFF6FF;
+    padding: 0 20px;
+    content: "or";
+    position: relative;
+    top: -10px;
+}
+
+
+.background {
+    display: flex;
+    width: fit-content;
+    background-color: #EFF6FF;
+    margin: 10px;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+    font-family: Barlow, serif;
+}
+
+.left {
+    height: 600px;
+}
+
+.top-item {
+    margin-top: 20px;
+}
+
+.right {
+    width: max-content;
+    padding: 20px;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #EFF6FF;
+    align-content: stretch;
+    margin: 20px;
+    /*border: 1px solid black;*/
+}
+
+.fb {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #255A9B;
+    width: 50%;
+}
+
+.linkedin {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #0076B6;
+    width: 50%;
+}
+
+.text-inputs {
+    flex-direction: row;
+    height: inherit;
+    width: 50%;
+    padding: 15px 10px 10px;
+}
+
+.input-fields {
+    font-family: Barlow, serif;
+    align-items: center;
+    height: 30px;
+    padding: 15px 10px 10px;
+    min-width: auto;
+}
+
+.radio-block {
+    gap: 10px;
+}
+
+.left-border-blue {
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-left: 1px solid #0076B6;
+}
+
+::placeholder {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    font-family: Barlow, serif;
+}
+
+.h1 {
+    font-size: 24px;
+}
+
+.h2 {
+    font-size: 18px;
+}
+
+.h3 {
+    font-size: 16px;
+}
+
+.h4 {
+    font-size: 10px;
+}
+
+.card {
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 200px;
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 10%);
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.info-icon {
+    height: 1ch;
+}
+
+.info-icon:hover {
+    height: 1.1ch;
+}
+
+.button-create-account {
+    color: #EFF6FF;
+    background-color: #3698FB;
+    font-size: 20px;
+    font-family: inherit;
+    width: 250px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.fb:hover, .linkedin:hover, .button-create-account:hover {
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+}
