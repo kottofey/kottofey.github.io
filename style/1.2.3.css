@@ -86,7 +86,7 @@ hr::after {
 }
 
 .left {
-    height: 700px;
+    height: 650px;
 }
 
 .top-item {
@@ -96,7 +96,7 @@ hr::after {
 .right {
     width: max-content;
     padding: 20px;
-    background-color: #EFF6FF;
+    background-color: #FFFFFF;
 }
 
 .buttons-block {
