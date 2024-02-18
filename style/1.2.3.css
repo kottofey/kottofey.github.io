@@ -96,6 +96,7 @@ hr::after {
 .right {
     width: max-content;
     padding: 20px;
+    background-color: #EFF6FF;
 }
 
 .buttons-block {
