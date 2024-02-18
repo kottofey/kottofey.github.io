@@ -64,7 +64,7 @@ hr {
 }
 
 hr::after {
-    background: #EFF6FF;
+    background: #ffffff;
     padding: 0 20px;
     content: "or";
     position: relative;
