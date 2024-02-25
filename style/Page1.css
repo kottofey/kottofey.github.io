@@ -1,9 +1,9 @@
 body {
     font-family: "Georgia", serif;
-    width: calc(100vw - 6px);
-    height: calc(100vh - 6px);
-    border: 3px dotted black;
-    margin: 0;
+    /*width: calc(100vw - 6px);*/
+    /*height: calc(100vh - 6px);*/
+    /*border: 3px dotted black;*/
+    /*margin: 0;*/
 }
 .nav {
     box-shadow: black 30px 30px 100px -50px;
