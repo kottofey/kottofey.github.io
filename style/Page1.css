@@ -1,0 +1,72 @@
+body {
+    font-family: "Georgia", serif;
+    width: calc(100vw - 6px);
+    height: calc(100vh - 6px);
+    border: 3px dotted black;
+    margin: 0;
+}
+.nav {
+    box-shadow: black 30px 30px 100px -50px;
+    border: 1px black solid;
+    margin: 5px auto 15px;
+    height: 150px;
+    width: 700px;
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 0.8em;
+    margin: auto;
+    /*border: #3698FB 1px solid;*/
+}
+
+.main-card {
+    border: solid 1px black;
+    box-shadow: black 30px 30px 100px -50px;
+    width: calc(700px - 15px - 15px);
+    padding: 0 15px;
+    height: 700px;
+    margin: auto;
+    background-size: contain;
+    /*background: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg') no-repeat 50% 50%;*/
+
+}
+
+
+img {
+    opacity: 80%;
+    border: red 3px solid;
+}
+
+.main-card p:first-of-type {
+    color: red;
+}
+
+.homepage {
+    padding: 0.3em;
+    border: rgb(37 90 155 / 0%) 2px solid;
+    border-radius: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #255A9B;
+
+}
+
+.homepage:hover {
+    padding: 0.3em;
+    border: rgb(37 90 155 / 30%) 2px solid;
+    border-radius: 30px;
+    margin: 0;
+}
+
+
+
+.homepage::before {
+    content: "Home";
+    padding-left: 1.2em;
+    background: url("/icons/home.svg") no-repeat;
+    background-size: contain;
+    width: min-content;
+    /*border: 2px dashed darkblue;*/
+}
