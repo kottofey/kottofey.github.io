@@ -64,7 +64,7 @@ hr {
 }
 
 hr::after {
-    background: #EFF6FF;
+    background: #ffffff;
     padding: 0 20px;
     content: "or";
     position: relative;
@@ -86,7 +86,7 @@ hr::after {
 }
 
 .left {
-    height: 600px;
+    height: 650px;
 }
 
 .top-item {
@@ -96,6 +96,7 @@ hr::after {
 .right {
     width: max-content;
     padding: 20px;
+    background-color: #FFFFFF;
 }
 
 .buttons-block {
