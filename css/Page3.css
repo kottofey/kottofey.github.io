@@ -1,0 +1,83 @@
+body, div, header, footer, img {
+    background-color: #e4e8ec;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*line-height: 0;*/
+    font-family: "Calibri Light", sans-serif;
+}
+
+header, main, footer, .links {
+    margin: 0 auto;
+    width: 700px;
+    padding: 0;
+    background-color: #fff;
+    /*border: 1px red solid;*/
+    display: flex;
+    flex-direction: column;
+}
+
+p, ol, h2 {
+    padding-left: 60px;
+    padding-right: 60px;
+    /*background-color: #255A9B;*/
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.button {
+    width: 270px;
+    height: 40px;
+    text-align: center;
+    margin: 30px auto 50px;
+    background-color: #0b1a23;
+    /*border: 1px red solid;*/
+}
+
+.button > a {
+    display: inline-block;
+    padding: 7px 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    /*border: 1px red solid;*/
+}
+
+.button a,
+.button a:visited,
+.button a:link {
+    color: #e3e4e5;
+    text-decoration: none;
+}
+
+.image-block {
+    display: flex;
+    align-items: baseline;
+    /*border: 1px black solid;*/
+    background-color: #ffffff;
+}
+
+.image-block figure {
+    /*border: 1px black solid;*/
+    width: 150px;
+    text-align: center;
+}
+
+.bottom-margin {
+    margin-bottom: 30px;
+}
+
+footer img {
+    width: 350px;
+}
+
+footer .links {
+    flex-direction: row;
+}

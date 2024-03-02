@@ -9,16 +9,45 @@ body {
     box-shadow: black 30px 30px 100px -50px;
     border: 1px black solid;
     margin: 5px auto 15px;
-    height: 150px;
+    height: 100px;
     width: 700px;
     display: flex;
+    color: #0076B6;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+nav a, nav a:visited {
+    text-decoration: none;
+    color: #255A9B;
 }
 
 nav li {
+    border: rgb(37 90 155 / 0%) 2px solid;
+    border-radius: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #255A9B;
     list-style: none;
-    padding: 0.8em;
+    padding: 0.8em 0.5em;
     margin: auto;
-    /*border: #3698FB 1px solid;*/
+}
+
+nav li:hover {
+    padding: 0.8em 0.5em;
+    border: rgb(37 90 155 / 30%) 2px solid;
+    border-radius: 30px;
+    /*margin: 0;*/
+}
+
+nav li:first-of-type::before {
+    content: "";
+    padding-left: 1.2em;
+    background: url("/icons/home.svg") no-repeat;
+    background-size: contain;
+    width: min-content;
+    height: min-content;
+    /*border: 2px dashed darkblue;*/
 }
 
 .main-card {
@@ -44,29 +73,15 @@ img {
 }
 
 .homepage {
-    padding: 0.3em;
-    border: rgb(37 90 155 / 0%) 2px solid;
-    border-radius: 30px;
-    font-size: 25px;
-    text-decoration: none;
-    color: #255A9B;
-
-}
-
-.homepage:hover {
-    padding: 0.3em;
-    border: rgb(37 90 155 / 30%) 2px solid;
-    border-radius: 30px;
-    margin: 0;
 }
 
 
 
-.homepage::before {
-    content: "Home";
-    padding-left: 1.2em;
-    background: url("/icons/home.svg") no-repeat;
-    background-size: contain;
-    width: min-content;
-    /*border: 2px dashed darkblue;*/
+.test-priority p {
+    color: blueviolet !important;
 }
+
+.test-not-important p {
+    color: green;
+}
+
