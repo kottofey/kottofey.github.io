@@ -1,25 +1,25 @@
 @import "normalize.css";
 
 a, a:visited {
-    color: #255A9B;
-    text-decoration: none;
-    /*font-weight: bold;*/
-    font-size: 18px;
+	color: #255A9B;
+	text-decoration: none;
+	/*font-weight: bold;*/
+	font-size: 18px;
 }
 
 body {
-    font: 1.4rem "Candara", sans-serif;
+	font: 1.4rem "Candara", sans-serif;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
 .links-card {
-    border: 1px solid  black;
-    border-radius: 10px;
-    margin: 30px auto;
-    width: 70%;
-    text-align: center;
-    padding: 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 30px auto;
+	width: 70%;
+	text-align: center;
+	padding: 0;
 }

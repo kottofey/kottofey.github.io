@@ -1,87 +1,86 @@
 body {
-    font-family: "Georgia", serif;
-    /*width: calc(100vw - 6px);*/
-    /*height: calc(100vh - 6px);*/
-    /*border: 3px dotted black;*/
-    /*margin: 0;*/
+	font-family: "Georgia", serif;
+	/*width: calc(100vw - 6px);*/
+	/*height: calc(100vh - 6px);*/
+	/*border: 3px dotted black;*/
+	/*margin: 0;*/
 }
+
 .nav {
-    box-shadow: black 30px 30px 100px -50px;
-    border: 1px black solid;
-    margin: 5px auto 15px;
-    height: 100px;
-    width: 700px;
-    display: flex;
-    color: #0076B6;
-    padding: 10px;
-    justify-content: space-evenly;
+	box-shadow: black 30px 30px 100px -50px;
+	border: 1px black solid;
+	margin: 5px auto 15px;
+	height: 100px;
+	width: 700px;
+	display: flex;
+	color: #0076B6;
+	padding: 10px;
+	justify-content: space-evenly;
 }
 
 nav a, nav a:visited {
-    text-decoration: none;
-    color: #255A9B;
+	text-decoration: none;
+	color: #255A9B;
 }
 
 nav li {
-    border: rgb(37 90 155 / 0%) 2px solid;
-    border-radius: 30px;
-    font-size: 25px;
-    text-decoration: none;
-    color: #255A9B;
-    list-style: none;
-    padding: 0.8em 0.5em;
-    margin: auto;
+	border: rgb(37 90 155 / 0%) 2px solid;
+	border-radius: 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #255A9B;
+	list-style: none;
+	padding: 0.8em 0.5em;
+	margin: auto;
 }
 
 nav li:hover {
-    padding: 0.8em 0.5em;
-    border: rgb(37 90 155 / 30%) 2px solid;
-    border-radius: 30px;
-    /*margin: 0;*/
+	padding: 0.8em 0.5em;
+	border: rgb(37 90 155 / 30%) 2px solid;
+	border-radius: 30px;
+	/*margin: 0;*/
 }
 
 nav li:first-of-type::before {
-    content: "";
-    padding-left: 1.2em;
-    background: url("/icons/home.svg") no-repeat;
-    background-size: contain;
-    width: min-content;
-    height: min-content;
-    /*border: 2px dashed darkblue;*/
+	content: "";
+	padding-left: 1.2em;
+	background: url("/icons/home.svg") no-repeat;
+	background-size: contain;
+	width: min-content;
+	height: min-content;
+	/*border: 2px dashed darkblue;*/
 }
 
 .main-card {
-    border: solid 1px black;
-    box-shadow: black 30px 30px 100px -50px;
-    width: calc(700px - 15px - 15px);
-    padding: 0 15px;
-    height: 700px;
-    margin: auto;
-    background-size: contain;
-    /*background: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg') no-repeat 50% 50%;*/
-
+	border: solid 1px black;
+	box-shadow: black 30px 30px 100px -50px;
+	width: calc(700px - 15px - 15px);
+	padding: 0 15px;
+	height: 700px;
+	margin: auto;
+	background-size: contain;
+	/*background: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg') no-repeat 50% 50%;*/
+	
 }
 
 
 img {
-    opacity: 80%;
-    border: red 3px solid;
+	opacity: 80%;
+	border: red 3px solid;
 }
 
 .main-card p:first-of-type {
-    color: red;
+	color: red;
 }
 
 .homepage {
 }
 
 
-
 .test-priority p {
-    color: blueviolet !important;
+	color: blueviolet !important;
 }
 
 .test-not-important p {
-    color: green;
+	color: green;
 }
-
