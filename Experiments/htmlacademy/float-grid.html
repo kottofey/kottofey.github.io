@@ -27,7 +27,7 @@
 	}
 
 	.wrapper {
-		width: 500px;
+		width: 100%;
 		margin: 10px auto;
 	}
 
@@ -66,7 +66,7 @@
 	}
 
 	.text {
-		
+
 	}
 
 	.text_header {
@@ -119,29 +119,41 @@
 	.logo_footer {
 		margin-bottom: 20px;
 	}
+
+	.positioner {
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 </style>
 
 <body class="wrapper">
 	<header class="header">
-		<div
-				class="logo"><img src="https://placehold.co/120x40" alt="html academy logo" width="120" height="40"></div>
+		<div class="positioner">
+			<div class="logo"><img src="https://placehold.co/120x40" alt="html academy logo" width="120" height="40"></div>
 			<ul class="menu">
 				<li class="menu__menu-item">Курсы</li>
 				<li class="menu__menu-item">Интенсив</li>
 			</ul>
-		<p class="text text_header">Научитель создавать современные веб-интерфейсы, оттачивайте своё мастерство, станьте
-			настоящим профессионалом.</p>
+			<p class="text text_header">Научитель создавать современные веб-интерфейсы, оттачивайте своё мастерство, станьте
+				настоящим профессионалом.</p>
+		</div>
 	</header>
 <main class="main">
-	<p class="content">Вы научитесь создавать современные веб-интерфейсы, работать с живым кодом, использовать
+	<div class="positioner">
+		<p class="content">Вы научитесь создавать современные веб-интерфейсы, работать с живым кодом,
+		использовать
 		новейшие технологии.</p>
-	<p class="content">Минимум скучной теории и максимум практичесикх упраженний, решение реальных задач и
-		настоящие испытания.</p>
-	<p class="content">Интересные наглядные и затягивающие курсы, интерактивные интерфейсы, достижения - всё для
-		обучения с удовольствием.</p>
+		<p class="content">Минимум скучной теории и максимум практичесикх упраженний, решение реальных задач и
+			настоящие испытания.</p>
+		<p class="content">Интересные наглядные и затягивающие курсы, интерактивные интерфейсы, достижения - всё для
+			обучения с удовольствием.</p>
+	</div>
 </main>
 <footer class="footer">
-	<div class="logo logo_footer"><img src="https://placehold.co/120x40" alt="hmtl academy logo"></div>
+	<div class="positioner">
+		<div class="logo logo_footer"><img src="https://placehold.co/120x40" alt="hmtl academy logo"></div>
+	</div>
 </footer>
 </body>
 </html>
