@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Сетка на флоатах, Главная хтмл академии</title>
+</head>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "TT Norms Pro", "Arial", sans-serif;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	.header, .main, .footer {
+		/*border: 1px red solid;*/
+	}
+
+	.wrapper {
+		width: 500px;
+		margin: 10px auto;
+	}
+
+	.header {
+		background-color: #35495d;
+		color: #fff;
+	}
+
+	.header:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.main:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.footer {
+		background-color: #35495d;
+		color: #fff;
+	}
+
+	.footer:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.logo {
+		float: left;
+		margin: 10px;
+		line-height: 0;
+	}
+
+	.text {
+		
+	}
+
+	.text_header {
+		float: left;
+		width: 350px;
+		height: auto;
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		clear: left;
+		font-weight: bold;
+	}
+
+	.menu {
+		float: right;
+		margin: 10px;
+	}
+
+	.menu__menu-item {
+		width: 90px;
+		height: 30px;
+		background-color: #2d3e4f;
+		display: flex;
+		margin-bottom: 10px;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		border-radius: 5px;
+		font-size: 14px;
+	}
+	.menu__menu-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.content {
+		width: 150px;
+		padding: 5px;
+		margin: 10px 25px 10px 0;
+		float: left;
+		background-color: #eef1f2;
+		text-align: center;
+	}
+
+	.content:last-child {
+		float: right;
+		margin-right: 0;
+	}
+
+	.logo_footer {
+		margin-bottom: 20px;
+	}
+</style>
+
+<body class="wrapper">
+	<header class="header">
+		<div
+				class="logo"><img src="https://placehold.co/120x40" alt="html academy logo" width="120" height="40"></div>
+			<ul class="menu">
+				<li class="menu__menu-item">Курсы</li>
+				<li class="menu__menu-item">Интенсив</li>
+			</ul>
+		<p class="text text_header">Научитель создавать современные веб-интерфейсы, оттачивайте своё мастерство, станьте
+			настоящим профессионалом.</p>
+	</header>
+<main class="main">
+	<p class="content">Вы научитесь создавать современные веб-интерфейсы, работать с живым кодом, использовать
+		новейшие технологии.</p>
+	<p class="content">Минимум скучной теории и максимум практичесикх упраженний, решение реальных задач и
+		настоящие испытания.</p>
+	<p class="content">Интересные наглядные и затягивающие курсы, интерактивные интерфейсы, достижения - всё для
+		обучения с удовольствием.</p>
+</main>
+<footer class="footer">
+	<div class="logo logo_footer"><img src="https://placehold.co/120x40" alt="hmtl academy logo"></div>
+</footer>
+</body>
+</html>
