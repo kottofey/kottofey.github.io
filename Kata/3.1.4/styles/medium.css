@@ -1,0 +1,129 @@
+.page-wrapper {
+	overflow: hidden;
+	max-width: 768px;
+	min-height: 416px;
+	border: 1px blue solid;
+}
+.header {
+	height: 88px;
+	border-bottom: 1px #D9FFF5 solid;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	/*border: 1px blue solid;*/
+}
+
+.menu__header {
+	height: 88px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.menu__slider-item {
+	font-weight: 500;
+	color: #7e7e82;
+	padding: 8px;
+	margin-left: 16px;
+	height: 40px;
+	min-width: 246px;
+}
+
+.menu--active-item {
+	border: 1px #B8FFEC solid;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.menu--fading::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 24px;
+	height: 40px;
+	background: linear-gradient(270.00deg, rgb(248, 248, 248) 16.836%,rgba(248, 248, 248, 0) 100%);
+}
+
+.menu_scrollable {
+	overflow: auto;
+}
+
+.main {
+	/*border: 1px red solid;*/
+	background-color: #F8F8F8;
+}
+
+.text {
+	/*border: 1px red solid;*/
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+}
+
+.title {
+	/*border: 1px green solid;*/
+	display: flex;
+	color: #1b1c21;
+}
+.main--outbound-fix {
+	padding-top: 24px;
+}
+
+.title--top::before {
+	content: "";
+	display: inline-block;
+	height: 40px;
+	width: 4px;
+	margin-right: 14px;
+	background-image: url("../imgs/Title-left-border.svg");
+}
+
+.title--top {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 16px 24px 0;
+	/*padding-top: 24px;*/
+}
+
+.title--read-next::before {
+	content: "";
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-image: url("../imgs/ic/expand.svg");
+}
+	
+	.title--read-next {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: -0.01em;
+		color: #1b1c21;
+		margin: 16px;
+	}
+
+.article {
+	/*border: 1px red solid;*/
+	
+}
+.article__image {
+	width: 100%;
+	height: auto;
+}
+
+.article__content {
+	display: block;
+	overflow: hidden;
+	max-height: 90px;
+	margin: 16px 16px 0 16px;
+	/*padding-top: 16px;*/
+}
+.article__content:first-child {
+	margin-top: 0;
+}
+
+.article--top-content-margin {
+	margin-top: 32px;
+}

@@ -30,3 +30,21 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+html {
+	box-sizing: border-box;
+	font-family: "TT Lakes", Arial, sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul, li, body, p {
+	margin: 0;
+	padding: 0;
+}
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}

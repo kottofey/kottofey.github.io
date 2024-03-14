@@ -4,40 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./styles/small.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" media="screen and (width <= 320px)" href="./styles/small.css">
+	<link rel="stylesheet" media="screen and (320px < width) and (width >= 768px)" href="./styles/medium.css">
+	<link rel="stylesheet" media="screen and (width > 768px)" href="./styles/large.css">
 	<title>CPS - Услуги и сервисы</title>
 </head>
 
 <body>
+<div class="page-wrapper">
+	<header class="header">
+		<nav class="navigation">
+			<ul class="menu menu__header">
+				<li class=""><a href="#"><img src="./imgs/ic/burger.svg" alt="Меню"></a></li>
+				<li class=""><a href="#"><img src="./imgs/header-logo.svg" alt="Логотип ЦПС"></a></li>
+				<li class=""><img class="menu--sm-divider" src="./imgs/divider.svg" alt=""></li>
+				<li class=""><a href="#"><img src="./imgs/ic/repair.svg" alt="кнопка отремонтировать"></a></li>
+				<li
+						class=""><a
+						href="#"><img src="./imgs/ic/checkstatus.svg" alt="кнопка проверить статус ремонта"></a></li>
+			</ul>
+		</nav>
 
-<header class="header">
-	<nav class="navigation">
-		<ul class="menu menu_header">
-			<li class=""><a href="#"><img src="./imgs/ic/burger.svg" alt="Меню"></a></li>
-			<li class=""><a href="#"><img src="./imgs/header-logo.svg" alt="Логотип ЦПС"></a></li>
-			<li class=""><img src="./imgs/divider.svg" alt=""></li>
-			<li class=""><a href="#"><img src="./imgs/ic/repair.svg" alt="кнопка отремонтировать"></a></li>
-			<li
-					class=""><a
-					href="#"><img src="./imgs/ic/checkstatus.svg" alt="кнопка проверить статус ремонта"></a></li>
+
+		<div class="title title--top header--gray-background">Услуги и сервисы</div>
+
+		<ul class="menu menu_scrollable menu--fading header--gray-background">
+			<li class="menu__slider-item menu--active-item"><a href="#">Ремонтируемые устройства</a></li>
+			<li class="menu__slider-item"><a href="#">Дополнительные услуги</a></li>
 		</ul>
-	</nav>
-</header>
+	</header>
 
-<main class="main">
-	<div class="title title_top">Услуги и сервисы</div>
+	<main class="main main--outbound-fix">
+		<article class="article article--top-content-margin">
+			<div class="article__content">
+				<p class="text">Мы являемся авторизованным сервисным центром по
+				ремонту техники Dell. Только
+				у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+				<p class="text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+					большое
+					количество
+					постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+					родным и близким.</p>
+			</div>
+			<a href="#"><p class="title title--read-next">Читать далее</p></a>
+			<img src="./imgs/Picture.png" alt="логотип" class="article__image">
+		</article>
 
-	<ul class="menu menu_long-and-fading">
-		<li class="menu__slider-item menu_active-item">Ремонтируемые устройства</li>
-		<li class="menu__slider-item">Дополнительные услуги</li>
-	</ul>
-
-	<article class="article">
-		<p class="text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-		<p class="text text_read-next">Читать далее</p>
-		<img src="./imgs/Picture.png" alt="логотип" class="article-image">
-	</article>
-</main>
-
+<!--		<article class="article">-->
+<!--			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi autem excepturi exercitationem facilis, illo ipsam iusto, minima nam numquam obcaecati, possimus provident quidem quisquam ratione reiciendis rem repellat sed tempore veniam. Ab aliquam amet asperiores aspernatur at culpa cum dicta dolorem doloremque dolorum, eaque eligendi enim eum explicabo facere facilis inventore iure labore nostrum, nulla obcaecati, provident quae quaerat quasi reiciendis sed sint sunt ullam velit vero. Aspernatur corporis dicta, doloribus exercitationem fugit id illo illum incidunt itaque iure nam natus omnis pariatur placeat provident quaerat qui quisquam quod repellat, sapiente tempora vel voluptate! Ipsam laboriosam modi quod soluta.</p>-->
+<!--			<p class="text title title&#45;&#45;read-next">Читать далее</p>-->
+<!--			<img src="./imgs/Picture.png" alt="логотип" class="article-image">-->
+<!--		</article>-->
+	</main>
+</div>
 </body>
 </html>
