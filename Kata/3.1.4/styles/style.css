@@ -55,9 +55,9 @@ a, a:visited {
 .header {
 	display: flex;
 	flex-direction: column;
-	height: 150px;
+	/*height: 150px;*/
 	/*border: 1px red solid;*/
-	padding-bottom: 12px;
+	/*padding-bottom: 12px;*/
 	
 }
 
@@ -83,6 +83,7 @@ a, a:visited {
 
 .menu__header-item {
 	/*height: 88px;*/
+	line-height: 0;
 	display: flex;
 	align-self: center;
 	margin-right: 16px;
@@ -118,9 +119,9 @@ a, a:visited {
 }
 
 .menu__scrollable-menu {
-	overflow: auto;
-	min-height: 40px;
-	margin-bottom: 40px;
+	overflow-x: auto;
+	min-height: 42px;
+	padding-bottom: 24px;
 }
 
 .menu-left-side {
@@ -138,7 +139,7 @@ a, a:visited {
 }
 
 .menu--laptop {
-	margin-left: 0;
+	/*margin-left: 4px;*/
 }
 
 .menu-right-side {
@@ -170,9 +171,13 @@ a, a:visited {
 	color: #1b1c21;
 }
 
+.title__content {
+	margin: auto 0;
+}
 .title--top::before {
 	content: "";
 	display: inline-block;
+	align-self: center;
 	height: 40px;
 	width: 4px;
 	margin-right: 14px;
@@ -182,8 +187,9 @@ a, a:visited {
 .title--top {
 	font-size: 28px;
 	font-weight: bold;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	min-height: 88px;
+	/*padding-top: 24px;*/
+	/*padding-bottom: 24px;*/
 }
 
 .title--read-next::before {
@@ -215,8 +221,8 @@ a, a:visited {
 .article__content {
 	display: block;
 	overflow: hidden;
-	max-height: 90px;
-	margin: 16px 16px 0 16px;
+	height: 90px;
+	margin: 0 16px 16px 16px;
 	/*padding-top: 16px;*/
 }
 .article__content:first-child {
@@ -249,16 +255,58 @@ a, a:visited {
 		height: 236px;
 		/*padding-bottom: 12px;*/
 		/*border: 1px blueviolet solid;*/
-	/*}*/
-	
-	.menu__scrollable-menu {
-		/*margin-bottom: 12px;*/
+		}
+		
+		.menu__scrollable-menu {
+			min-height: 64px;
+			padding-bottom: 0;
+		}
+		
+		.title--top {
+			min-height: 96px;
+			padding-top: 24px;
+			padding-bottom: 32px;
+		}
+		
+		.title--read-next {
+			margin: 20px 0 0 0;
+		}
+		
+		.menu-left-side {
+			margin-left: 24px;
+			margin-right: 250px;
+		}
+		
+		.menu-left-side .menu__header-item:first-child {
+			margin-right: 0;
+		}
+		
+		.article {
+			position: relative;
+			width: 720px;
+			height: 242px;
+			margin: 0 24px;
+			padding-top: 24px;
+		}
+		
+		.article__content {
+			position: relative;
+			width: 312px;
+			height: 160px;
+			margin: 0;
+		}
+		
+		.article__content--laptop-text {
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		
+		.article__image {
+			width: 50%;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
 	}
-	
-	.title--top {
-		padding-bottom: 32px;
-	}
-	.menu-left-side {
-		margin-right: 262px;
-	}
-}
