@@ -52,7 +52,7 @@
 	background: linear-gradient(270.00deg, rgb(248, 248, 248) 16.836%,rgba(248, 248, 248, 0) 100%);
 }
 
-.menu_scrollable {
+.menu__scrollable-menu {
 	overflow: auto;
 }
 
