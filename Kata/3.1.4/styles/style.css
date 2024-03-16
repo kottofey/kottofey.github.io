@@ -246,7 +246,7 @@ a, a:visited {
 }
 
 /*laptop view*/
-@media screen and (320px < width) and (width >= 768px) {
+@media screen and (320px < width) and (width <= 768px) {
 	.page-wrapper {
 		width: 768px;
 	}
