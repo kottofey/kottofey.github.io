@@ -2,70 +2,59 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-<!--	<link rel="stylesheet" media="screen and (width <= 320px)" href="./styles/small.css">-->
-<!--	<link rel="stylesheet" media="screen and (320px < width) and (width >= 768px)" href="./styles/medium.css">-->
-<!--	<link rel="stylesheet" media="screen and (width > 768px)" href="./styles/large.css">-->
+	<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport">
+	<link href="styles/style.css" rel="stylesheet">
 	<title>CPS - Услуги и сервисы</title>
 </head>
 
 <body>
 <div class="page-wrapper">
 	<header class="header">
-		<nav class="menu menu--header-menu">
-			<ul class="menu-left-side">
-				<li class="menu__header-item"><a href="#"><img src="./imgs/ic/burger.svg" alt="Меню"></a></li>
-				<li class="menu__header-item menu__header-item--divider menu--laptop"><img class="" src="./imgs/divider.svg" alt=""></li>
-				<li class="menu__header-item"><a href="#"><img src="./imgs/header-logo.svg" alt="Логотип ЦПС"></a></li>
-			</ul>
-				<ul class="menu-right-side">
-					<li
-							class="menu__header-item menu--laptop"><a
-							href="#"><img src="./imgs/ic/ic_call.svg" alt="кнопка позвонить"></a></li>
-					<li class="menu__header-item menu--laptop"><a href="#"><img src="./imgs/ic/ic_chat.svg" alt="кнопка чат"></a></li>
-					<li class="menu__header-item menu--laptop menu__header-item--no-right-margin"><a href="#"><img src="./imgs/ic/ic_profile.svg"
-																																			 alt="кнопка профайл"></a></li>
-					<li
-							class="menu__header-item menu__header-item--divider"><img class="" src="./imgs/divider.svg"
-																																										 alt=""></li>
-					<li class="menu__header-item"><a href="#"><img src="./imgs/ic/repair.svg" alt="кнопка отремонтировать"></a></li>
-					<li
-							class="menu__header-item"><a
-							href="#"><img src="./imgs/ic/checkstatus.svg" alt="кнопка проверить статус ремонта"></a></li>
+		<div class="desktop-wrapper">
+
+			<nav class="menu menu--header-menu">
+				<ul class="menu--left-side menu__header-item--desktop-hide">
+					<li><a href="#" class="menu__header-item"><img alt="Меню" src="./imgs/ic/burger.svg" width="40"></a></li>
+					<li><span class="menu__header-item menu__header-item--divider menu--laptop"><img alt="" class="" src="./imgs/divider.svg"></span></li>
+					<li><a href="#" class="menu__header-item menu__header-item--no-right-margin"><img alt="Логотип ЦПС" src="./imgs/header-logo.svg"></a></li>
 				</ul>
-		</nav>
 
+					<ul class="menu--right-side">
+						<li class="menu__header-item--desktop-hide"><a href="#" class="menu--laptop menu__header-item"><img alt="кнопка позвонить" src="./imgs/ic/ic_call.svg" width="40"></a></li>
+						<li class="menu__header-item--desktop-hide"><a href="#" class="menu__header-item menu--laptop"><img alt="кнопка чат" src="./imgs/ic/ic_chat.svg" width="40"></a></li>
+						<li class="menu__header-item--desktop-hide"><a href="#" class="menu__header-item menu--laptop menu__header-item--no-right-margin"><img alt="кнопка профайл" src="./imgs/ic/ic_profile.svg" width="40"></a></li>
+						<li class="menu__header-item menu__header-item--divider menu__header-item--desktop-hide"><img alt="" class="" src="./imgs/divider.svg"></li>
+						<li><a href="#" class="menu__header-item"><span class="menu_header-item--title">Оставить заявку</span><img alt="кнопка оставить заявку" src="./imgs/ic/repair.svg" width="40"></a></li>
+						<li><a href="#" class="menu__header-item"><span class="menu_header-item--title">Статус ремонта</span><img alt="кнопка статус ремонта" src="./imgs/ic/checkstatus.svg" width="40"></a></li>
+					</ul>
+			</nav>
 
-		<div class="title title--top header--gray-background"><p class="title__content">Услуги и сервисы</p></div>
+			<div class="title title--top"><p class="title__content">Услуги и сервисы</p></div>
+		</div> <!--end of desktop wrapper-->
 
-		<ul class="menu menu__scrollable-menu menu--fading header--gray-background">
-			<li class="menu__slider-item menu--active-item"><a href="#">Ремонтируемые устройства</a></li>
-			<li class="menu__slider-item"><a href="#">Дополнительные услуги</a></li>
-			<li class="menu__slider-item"><a href="#">Ремонтируемые устройства</a></li>
-			<li class="menu__slider-item"><a href="#">Цены на услуги</a></li>
-			<li class="menu__slider-item"><a href="#">Адреса сервисных центров</a></li>
-			<li class="menu__slider-item"><a href="#">Отзывы</a></li>
+		<ul class="menu slider-menu menu--fading">
+			<li class="slider-menu__slider-item menu--active-item"><a href="#">Ремонтируемые бренды</a></li>
+			<li class="slider-menu__slider-item"><a href="#">Доп. услуги</a></li>
+			<li class="slider-menu__slider-item"><a href="#">Ремонтируемые устройства</a></li>
+			<li class="slider-menu__slider-item"><a href="#">Цены</a></li>
+			<li class="slider-menu__slider-item"><a href="#">Адреса сервисных центров</a></li>
+			<li class="slider-menu__slider-item"><a href="#">Отзывы</a></li>
 		</ul>
 	</header>
 
-	<main class="main">
+	<main class="main header--gray-background
+">
 		<article class="article">
 			<div class="article__content">
-				<p class="text article__content--laptop-text">Мы являемся авторизованным сервисным центром по
-				ремонту техники Dell. Только
-				у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-				<br><br>
-				Мы успешно работаем с 1992 года и заслужили репутацию надежного
-					партнера, что подтверждает
-					большое
-					количество
-					постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-					родным и близким.</p>
+				<p class="text article__content--text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+					<br><br>
+					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+					количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+				<a href="#"><p class="title article__content--read-next">Читать далее</p></a>
 			</div>
-			<a href="#"><p class="title title--read-next">Читать далее</p></a>
-			<img src="./imgs/Picture.png" alt="логотип" class="article__image">
+			<img alt="логотип" class="article__image" src="./imgs/Picture.png">
 		</article>
 
 	</main>
