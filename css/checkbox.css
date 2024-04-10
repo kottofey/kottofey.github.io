@@ -1,0 +1,43 @@
+body {
+	background-color: #393939;
+	color: gainsboro;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 15px;
+}
+.checkbox {
+	display: block;
+	margin-bottom: 1em;
+	padding-left: 1.2em;
+}
+
+.checkbox__input {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.checkbox__box {
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	background-image: url("/icons/unch-en.svg");
+	background-size: 1em;
+	margin-left: -1.2em;
+}
+
+.checkbox__input:checked + .checkbox__box {
+	background-image: url("/icons/ch-en.svg");
+}
+
+.checkbox__input:disabled + .checkbox__box {
+	background-image: url("/icons/unch-dis.svg");
+}
+
+.checkbox__input:checked:disabled + .checkbox__box {
+	background-image: url("/icons/ch-dis.svg");
+}
