@@ -9,7 +9,7 @@
 <header>
 	<h1>Это сайт печеньки Марии</h1>
 	<nav>
-		<img class="nav-logo" src="../../imgs/cat-logo.svg" alt="" width="70"/>
+		<img class="nav-logo" src="../../imgs/cat-logo.svg" alt="" width="80" height="108"/>
 		<ul>
 			<li>Главная</li>
 			<li>Альбомы</li>
@@ -22,15 +22,33 @@
 <main>
 	<div class="album">
 		<figure>
+			<video preload="metadata" playsinline autoplay muted loop width="200">
+				<source src="../../imgs/video.mp4" type="video/mp4">
+			</video>
+			<figcaption>Апрель апрель звенит капель!</figcaption>
+		</figure>
+		<figure>
+		<video preload="metadata" playsinline autoplay muted loop width="200">
+			<source src="../../imgs/video2.mp4" type="video/mp4">
+		</video>
+		<figcaption>Сердце Чебурашки</figcaption>
+	</figure>
+		<figure>
+		<video preload="metadata" playsinline autoplay muted loop width="200">
+			<source src="../../imgs/video3.mp4" type="video/mp4">
+		</video>
+		<figcaption>Когда захотелось снять про Чебурашку на радужном фоне</figcaption>
+	</figure>
+		<figure>
 			<img src="../../imgs/Kitten_in_blanket.jpg" alt=""/>
 			<figcaption>Знакомьтесь, это - кошечка Мурка!</figcaption>
 		</figure>
 		<figure>
-			<img src="https://w.forfun.com/fetch/73/733f191603e506ccb1ba5d8674ebe412.jpeg" alt=""/>
+			<img src="../../imgs/1.jpg" alt=""/>
 			<figcaption>Милашная Мяу!</figcaption>
 		</figure>
 		<figure>
-			<img src="https://funik.ru/wp-content/uploads/2018/10/f1fda080713507f02387.jpg" alt=""/>
+			<img src="../../imgs/2.jpeg" alt=""/>
 			<figcaption>Блестящее кошачье чудо!</figcaption>
 		</figure>
 		<figure>
@@ -40,5 +58,21 @@
 	</div>
 </main>
 <footer>&copy; Все права защищены! Мяу!</footer>
+
+<script>
+	let cat = document.querySelector(".nav-logo");
+	let x = 80;
+	cat.onclick = function () {
+		// if (moveX > 6) moveX = 0.8;
+		x += 40;
+		cat.style.width = x + "px";
+		if (cat.offsetWidth > 300) {
+			console.log("BOOM!");
+			document.querySelector("body").classList.add("boom");
+			cat.style.opacity = '0';
+	}
+
+	}
+</script>
 </body>
 </html>

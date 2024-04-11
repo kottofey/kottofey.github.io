@@ -70,3 +70,9 @@ footer {
 	text-align: center;
 	font-weight: bold;
 }
+
+.boom {
+	background-image: url("../imgs/boom.png");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
