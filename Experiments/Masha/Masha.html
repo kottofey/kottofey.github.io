@@ -1,78 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../../css/masha.css">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+	<link href="../../css/masha.css" rel="stylesheet">
+
 	<title>Сайт Маши</title>
 </head>
 <body>
-<header>
-	<h1>Это сайт печеньки Марии</h1>
-	<nav>
-		<img class="nav-logo" src="../../imgs/cat-logo.svg" alt="" width="80" height="108"/>
-		<ul>
-			<li>Главная</li>
-			<li>Альбомы</li>
-			<li>Обо мне</li>
-			<li>Контакты</li>
-		</ul>
-	</nav>
-</header>
+<div class="page-wrapper">
+	<h1 class="page-title">Это сайт печеньки Марии</h1>
 
-<main>
+	<!--  Menu  -->
+	<nav class="menu">
+		<a class="menu__item" href="#">Главная</a>
+		<a class="menu__item menu__item--active" href="#">Альбомы</a>
+		<a class="menu__item" href="#">Обо мне</a>
+		<a class="menu__item" href="#">Контакты</a>
+		<div class="menu__cat"></div>
+	</nav>
+	<!--  End of Menu -->
+
 	<div class="album">
-		<figure>
-			<video preload="metadata" playsinline autoplay muted loop width="200">
-				<source src="../../imgs/video.mp4" type="video/mp4">
+		<figure class="album__item">
+			<img alt="" class="album__image" src="../../imgs/1.jpeg">
+			<figcaption class="album__caption">Милашная Мяу</figcaption>
+		</figure>
+
+		<figure class="album__item">
+			<img alt="" class="album__image" src="../../imgs/2.jpeg">
+			<figcaption class="album__caption">Блестящее кошачье чудо</figcaption>
+		</figure>
+
+		<figure class="album__item">
+			<img alt="" class="album__image" src="../../imgs/3.jpeg">
+			<figcaption class="album__caption">Знакомьтесь, это - кошечка Мурка!</figcaption>
+		</figure>
+
+		<figure class="album__item">
+			<img alt="" class="album__image" src="../../imgs/4.jpeg">
+			<figcaption class="album__caption">Наш кот — вампир?</figcaption>
+		</figure>
+
+		<figure class="album__item">
+			<video autoplay class="album__image" loop muted playsinline preload="metadata">
+				<source src="../../imgs/5.mp4" type="video/mp4">
 			</video>
-			<figcaption>Апрель апрель звенит капель!</figcaption>
+			<figcaption class="album__caption">Апрель апрель звенит капель!</figcaption>
 		</figure>
-		<figure>
-		<video preload="metadata" playsinline autoplay muted loop width="200">
-			<source src="../../imgs/video2.mp4" type="video/mp4">
-		</video>
-		<figcaption>Сердце Чебурашки</figcaption>
-	</figure>
-		<figure>
-		<video preload="metadata" playsinline autoplay muted loop width="200">
-			<source src="../../imgs/video3.mp4" type="video/mp4">
-		</video>
-		<figcaption>Когда захотелось снять про Чебурашку на радужном фоне</figcaption>
-	</figure>
-		<figure>
-			<img src="../../imgs/Kitten_in_blanket.jpg" alt=""/>
-			<figcaption>Знакомьтесь, это - кошечка Мурка!</figcaption>
+
+		<figure class="album__item">
+			<video autoplay class="album__image" loop muted playsinline preload="metadata">
+				<source src="../../imgs/6.mp4" type="video/mp4">
+			</video>
+			<figcaption class="album__caption">Сердце Чебурашки</figcaption>
 		</figure>
-		<figure>
-			<img src="../../imgs/1.jpg" alt=""/>
-			<figcaption>Милашная Мяу!</figcaption>
+
+		<figure class="album__item">
+			<video autoplay class="album__image" loop muted playsinline preload="metadata">
+				<source src="../../imgs/7.mp4" type="video/mp4">
+			</video>
+			<figcaption class="album__caption">Когда захотелось снять про Чебурашку на радужном фоне</figcaption>
 		</figure>
-		<figure>
-			<img src="../../imgs/2.jpeg" alt=""/>
-			<figcaption>Блестящее кошачье чудо!</figcaption>
-		</figure>
-		<figure>
-			<img src="../../imgs/IMG_5271.jpg" alt=""/>
-			<figcaption>Наш кот — вампир?</figcaption>
+
+		<figure class="album__item">
+			<img alt="" class="album__image" src="https://placehold.co/200x200">
+			<figcaption class="album__caption">Гарри Поттер</figcaption>
 		</figure>
 	</div>
-</main>
-<footer>&copy; Все права защищены! Мяу!</footer>
+	<footer class="footer">&copy; Все права защищены! Мяу! <br>2024г</footer>
+</div>
+<!--End of page wrapper-->
 
-<script>
-	let cat = document.querySelector(".nav-logo");
-	let x = 80;
-	cat.onclick = function () {
-		// if (moveX > 6) moveX = 0.8;
-		x += 40;
-		cat.style.width = x + "px";
-		if (cat.offsetWidth > 300) {
-			console.log("BOOM!");
-			document.querySelector("body").classList.add("boom");
-			cat.style.opacity = '0';
-	}
-
-	}
-</script>
+<script src="cat-boom.js"></script>
 </body>
 </html>
