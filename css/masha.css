@@ -41,22 +41,22 @@ ul, li, a {
 }
 
 .menu__item {
-	font-size: 1.2em;
+	font-size: 1.0em;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	text-align: center;
 	width: 110px;
 	height: 50px;
 	margin: 5px;
 	color: #0076B6;
 }
 
-.menu__item:first-child {
-	margin-left: 80px;
-}
+/*.menu__item:first-child {*/
+/*	margin-left: 80px;*/
+/*}*/
 
 .menu__item--active {
-	font-size: 1.4em;
+	font-size: 1.05em;
 	font-weight: bold;
 	color: #0fbf90;
 }
@@ -66,10 +66,12 @@ ul, li, a {
 	display: flex;
 	background: url("../imgs/cat-logo.svg") no-repeat;
 	background-size: 80px 110px;
+	opacity: 30%;
 	width: 80px;
 	height: 110px;
 	left: 0;
 	bottom: 0;
+	z-index: -1;
 }
 
 .menu::after {
@@ -89,8 +91,19 @@ ul, li, a {
 /* Album */
 .album {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+
+.album__big-picture {
+	display: flex;
+	margin: 0 auto;
+	padding: 5px;
+	width: 300px;
+	height: 300px;
+	justify-content: center;
+	object-fit: cover;
+	line-height: 300px;
 }
 
 .album__item {
@@ -98,27 +111,55 @@ ul, li, a {
 	overflow: clip;
 	align-items: center;
 	flex-flow: column;
-	width: 210px;
-	height: 280px;
+	width: 100px;
+	height: 100px;
 	margin-bottom: 20px;
-	border-bottom: 3px solid tomato;
-	border-radius: 10px;
 }
 
-.album__image {
-	overflow: hidden;
-	width: 200px;
-	height: 200px;
+.album__preview-panel {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 800px;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.album__image-preview {
 	margin: 5px;
-	border-radius: 35px;
+	padding: 0;
+	border: 0;
+	background: none;
+	
+	transition-property: scale, opacity;
+	transition-duration: 0.15s;
+	transform-origin: center;
+	
+	height: 95%;
+	width: 95%;
+}
+
+.album__image-preview:hover,
+.album__image-preview:focus {
+	scale: 1.1;
+	opacity: 50%;
+	filter: blur(0.5px);
+}
+
+.album__image-preview img,
+.album__image-preview video {
 	object-fit: cover;
+	width: 75px;
+	height: 75px;
+	border-radius: 40%;
 }
 
 .album__caption {
 	max-width: 90%;
+	max-height: 40px;
 	margin-top: auto;
 	margin-bottom: 10px;
 	text-align: center;
+	display: none;
 }
 
 

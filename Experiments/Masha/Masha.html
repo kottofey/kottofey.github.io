@@ -24,56 +24,87 @@
 	<!--  End of Menu -->
 
 	<div class="album">
-		<figure class="album__item">
-			<img alt="" class="album__image" src="../../imgs/1.jpeg">
-			<figcaption class="album__caption">Милашная Мяу</figcaption>
-		</figure>
 
-		<figure class="album__item">
-			<img alt="" class="album__image" src="../../imgs/2.jpeg">
-			<figcaption class="album__caption">Блестящее кошачье чудо</figcaption>
-		</figure>
+		<div class="album__big-picture">
+			<img src="../../imgs/1.jpeg" alt="main picture">
+<!--			<video>-->
+<!--				<source src="../../imgs/6.mp4" type="video/mp4">-->
+<!--			</video>-->
 
-		<figure class="album__item">
-			<img alt="" class="album__image" src="../../imgs/3.jpeg">
-			<figcaption class="album__caption">Знакомьтесь, это - кошечка Мурка!</figcaption>
-		</figure>
+		</div>
 
-		<figure class="album__item">
-			<img alt="" class="album__image" src="../../imgs/4.jpeg">
-			<figcaption class="album__caption">Наш кот — вампир?</figcaption>
-		</figure>
+		<div class="album__preview-panel">
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<img alt="" src="../../imgs/1.jpeg">
+				</button>
+				<!--			<figcaption class="album__caption">Милашная Мяу</figcaption>-->
+			</figure>
 
-		<figure class="album__item">
-			<video autoplay class="album__image" loop muted playsinline preload="metadata">
-				<source src="../../imgs/5.mp4" type="video/mp4">
-			</video>
-			<figcaption class="album__caption">Апрель апрель звенит капель!</figcaption>
-		</figure>
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<img alt="" src="../../imgs/2.jpeg">
+				</button>
+				<!--			<figcaption class="album__caption">Блестящее кошачье чудо</figcaption>-->
+			</figure>
 
-		<figure class="album__item">
-			<video autoplay class="album__image" loop muted playsinline preload="metadata">
-				<source src="../../imgs/6.mp4" type="video/mp4">
-			</video>
-			<figcaption class="album__caption">Сердце Чебурашки</figcaption>
-		</figure>
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<img alt="" src="../../imgs/3.jpeg">
+				</button>
+				<!--			<figcaption class="album__caption">Знакомьтесь, это - кошечка Мурка!</figcaption>-->
+			</figure>
 
-		<figure class="album__item">
-			<video autoplay class="album__image" loop muted playsinline preload="metadata">
-				<source src="../../imgs/7.mp4" type="video/mp4">
-			</video>
-			<figcaption class="album__caption">Когда захотелось снять про Чебурашку на радужном фоне</figcaption>
-		</figure>
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<img alt="" src="../../imgs/4.jpeg">
+				</button>
+				<!--			<figcaption class="album__caption">Наш кот — вампир?</figcaption>-->
+			</figure>
 
-		<figure class="album__item">
-			<img alt="" class="album__image" src="https://placehold.co/200x200">
-			<figcaption class="album__caption">Гарри Поттер</figcaption>
-		</figure>
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<video preload="metadata">
+						<source src="../../imgs/5.mp4#t=0.01" type="video/mp4">
+					</video>
+				</button>
+				<!--			<figcaption class="album__caption">Апрель апрель звенит капель!</figcaption>-->
+			</figure>
+
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<video preload="metadata">
+						<source src="../../imgs/6.mp4#t=0.01" type="video/mp4">
+					</video>
+				</button>
+				<!--			<figcaption class="album__caption">Сердце Чебурашки</figcaption>-->
+			</figure>
+
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<video preload="metadata">
+						<source src="../../imgs/7.mp4#t=0.01" type="video/mp4">
+					</video>
+				</button>
+
+				<!--			<figcaption class="album__caption">Когда захотелось снять про Чебурашку на радужном фоне</figcaption>-->
+			</figure>
+
+			<figure class="album__item">
+				<button class="album__image-preview" type="button">
+					<img alt="" src="https://placehold.co/200x200">
+				</button>
+				<!--			<figcaption class="album__caption">Гарри Поттер</figcaption>-->
+			</figure>
+		</div>  <!--		end of preview panel  -->
 	</div>
-	<footer class="footer">&copy; Все права защищены! Мяу! <br>2024г</footer>
+	<footer class="footer">&copy; Все права защищены! Мяу!
+		<br>2024г
+	</footer>
 </div>
 <!--End of page wrapper-->
 
 <script src="cat-boom.js"></script>
+<script src="preview-handler.js"></script>
 </body>
 </html>
