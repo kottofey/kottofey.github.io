@@ -9,6 +9,7 @@ let descriptions = [
     "Гарри Поттер",
     "Гарри Коттер и кубок вкусняшек",
     "Гарри Коттер и колбасный камень",
+    "Гарри Коттер и орден Котика"
 ]; 
 
 let bigPicture = document.querySelector(".album__big-picture");
