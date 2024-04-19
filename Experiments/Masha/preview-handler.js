@@ -1,14 +1,29 @@
-let bigPicture = document.querySelector(".album__big-picture");
+let descriptions = [
+    "Милашная Мяу",
+    "Блестящее кошачье чудо",
+    "Знакомьтесь, это - кошечка Мурка!",
+    "Наш кот — вампир?",
+    "Апрель апрель звенит капель!",
+    "Сердце Чебурашки",
+    "Когда захотелось снять про Чебурашку на радужном фоне",
+    "Гарри Поттер",
+    "Гарри Коттер и кубок вкусняшек",
+    "Гарри Коттер и колбасный камень",
+]; 
 
+let bigPicture = document.querySelector(".album__big-picture");
 let previews = document.querySelectorAll(".album__image-preview");
+let photoDescription = document.querySelector(".album__description");
+
 
 let previewURLs = {};
-
 for (let i = 0; i < previews.length; i++) {
     previewURLs[i] = previews[i].querySelector("img, source").src;
 }
 
-let createClickHandler = function (preview, url) {
+console.log(bigPicture.children);
+
+let createClickHandler = function (preview, url, description) {
     let previewTag;
     let previewTagSrc;
 
@@ -17,11 +32,8 @@ let createClickHandler = function (preview, url) {
         if (preview.querySelector("source, img").tagName === "IMG") {
             previewTag = document.createElement("img");
             previewTag.src = url;
-
-            console.log(previewTag);
-
-            bigPicture.children[0].remove();
-            bigPicture.append(previewTag);
+            
+            bigPicture.replaceChild(previewTag, bigPicture.children[0]);
         } else {
             previewTag = document.createElement("video");
             console.log(previewTag);
@@ -34,18 +46,16 @@ let createClickHandler = function (preview, url) {
             previewTag.muted = true;
             previewTag.preload = "metadata";
             previewTag.autoplay = true;
-            // previewTag.poster = "";
             previewTag.append(previewTagSrc);
 
-            console.log(previewTag);
-            bigPicture.children[0].remove();
-            bigPicture.append(previewTag);
+            bigPicture.replaceChild(previewTag, bigPicture.children[0]);
         }
-        console.log(bigPicture);
+
+        photoDescription.textContent = description;
     });
 }
 
 for (let i = 0; i < previews.length; i++) {
-    createClickHandler(previews[i], previewURLs[i]);
+    createClickHandler(previews[i], previewURLs[i], descriptions[i]);
     // console.log(previews[i].querySelector("source, img").tagName);
 }

@@ -99,11 +99,29 @@ ul, li, a {
 	display: flex;
 	margin: 0 auto;
 	padding: 5px;
+	
 	width: 300px;
-	height: 300px;
+	/*height: 300px;*/
 	justify-content: center;
 	object-fit: cover;
 	line-height: 300px;
+}
+
+.album__big-picture img,
+.album__big-picture video {
+	width: 100%;
+	height: auto;
+}
+
+.album__description {
+	display: flex;
+	margin: 0.8em auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 300px;
+	min-height: fit-content;
+	font-size: 1.3em;
 }
 
 .album__item {
@@ -152,16 +170,6 @@ ul, li, a {
 	height: 75px;
 	border-radius: 40%;
 }
-
-.album__caption {
-	max-width: 90%;
-	max-height: 40px;
-	margin-top: auto;
-	margin-bottom: 10px;
-	text-align: center;
-	display: none;
-}
-
 
 /* Footer */
 .footer {
