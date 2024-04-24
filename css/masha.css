@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 html {
 	box-sizing: border-box;
 }
@@ -51,10 +52,6 @@ ul, li, a {
 	color: #0076B6;
 }
 
-/*.menu__item:first-child {*/
-/*	margin-left: 80px;*/
-/*}*/
-
 .menu__item--active {
 	font-size: 1.05em;
 	font-weight: bold;
@@ -87,29 +84,19 @@ ul, li, a {
 	background-repeat: no-repeat;
 }
 
-
 /* Album */
 .album {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 	justify-content: space-between;
 }
 
 .album__big-picture {
-	display: flex;
+	object-fit: contain;
+	height: 300px;
+	max-width: 80vw;
 	margin: 0 auto;
 	padding: 5px;
-	
-	width: 300px;
-	justify-content: center;
-	object-fit: cover;
-	line-height: 300px;
-}
-
-.album__big-picture img,
-.album__big-picture video {
-	width: 100%;
-	height: auto;
 }
 
 .album__description {
@@ -119,11 +106,11 @@ ul, li, a {
 	align-items: center;
 	text-align: center;
 	width: 300px;
-	min-height: fit-content;
+	min-height: 75px;
 	font-size: 1.3em;
 }
 
-.album__item {
+.album__thumbnail {
 	display: flex;
 	overflow: clip;
 	align-items: center;
@@ -146,11 +133,9 @@ ul, li, a {
 	padding: 0;
 	border: 0;
 	background: none;
-	
 	transition-property: scale, opacity;
 	transition-duration: 0.15s;
 	transform-origin: center;
-	
 	height: 95%;
 	width: 95%;
 }
