@@ -2,65 +2,28 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-
-	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/Page1.css">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<link href="swiper-bundle.css" rel="stylesheet">
+	<link href="../css/Page1.css" rel="stylesheet">
 	<title>Рубрика "Эксперименты!"</title>
 </head>
 <body>
-<header>
-	<nav>
-		<ul class="nav">
-			<li><a class="homepage" href="../index.html">Home</a></li>
-			<li class=""><a href="#">Another link</a></li>
-			<li class=""><a href="#">One another link</a></li>
-		</ul>
-	</nav>
-</header>
-<main>
-	<div class="main-card">
+<div class="brands-repair-list">
+	<p class="brands-repair-list__title">Ремонт техники различных брендов</p>
+	<div class="brands-repair-list--wide-screen">
+		<div class="swiper-wrapper">
 
-		<figure style="margin-top: 20px;" class="">
-			<img src="" width="400" alt="Альт фото Натуськи">
-			<figcaption>Подпись к фотке Натуськи</figcaption>
-		</figure>
-
-		<p>Первый параграф</p>
-		<p>Второй параграф</p>
-		<p>Третий параграф</p>
-
-		<div class="first-div">
-			<p>DIV Первый параграф</p>
-			<p>DIV Второй параграф</p>
-			<p>DIV Третий параграф</p>
+			<button class="swiper-slide brands-repair-list__card brands-repair-list__card--lenovo" type="button"></button>
+			<button class="swiper-slide brands-repair-list__card brands-repair-list__card--samsung" type="button"></button>
+			<button class="swiper-slide brands-repair-list__card brands-repair-list__card--apple" type="button"></button>
 		</div>
-
-		<div class="">
-			<p>DIV2 Первый параграф</p>
-			<p>DIV2 Второй параграф</p>
-			<p>DIV2 Третий параграф</p>
-		</div>
-
-		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-		</ul>
-
-		<div class="test-priority">
-			<p>This is inside &ltdiv class="test-priority"&gt &ltp&gt</p>
-			<p class="test-not-important">This is inside &ltp class="test-not-important"&gt </p>
-			<p style="color: blue;">This is inside &ltp&gt with no class but with style color blue</p>
-		</div>
-
 	</div>
-</main>
+	<div class="swiper-pagination"></div>
+	<button class="brands-repair-list__more-btn" type="button">Показать все</button>
+</div>
+
+
+<script src="swiper-bundle.js"></script>
+<script src="swiperInit.js"></script>
 </body>
 </html>
