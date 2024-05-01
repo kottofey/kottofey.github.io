@@ -2,6 +2,8 @@
 
 html {
 	box-sizing: border-box;
+	/*background-color: #442121;*/
+	
 }
 
 *, *:before, *:after {
@@ -24,7 +26,7 @@ ul, li, a {
 	flex-flow: column;
 	width: 85%;
 	margin: 0 auto;
-	background: url("../imgs/boom.png") no-repeat;
+	background: url("../imgs/Masha/boom.png") no-repeat;
 	background-size: 0 0;
 }
 
@@ -61,7 +63,7 @@ ul, li, a {
 .menu__cat {
 	position: absolute;
 	display: flex;
-	background: url("../imgs/cat-logo.svg") no-repeat;
+	background: url("../imgs/Masha/cat-logo.svg") no-repeat;
 	background-size: 80px 110px;
 	opacity: 30%;
 	width: 80px;
@@ -91,36 +93,38 @@ ul, li, a {
 	justify-content: space-between;
 }
 
-.album__big-picture {
-	object-fit: contain;
-	height: 300px;
-	max-width: 80vw;
+.album__fullsize-vid-wrapper,
+.album__fullsize-img-wrapper {
+	display: flex;
+	height: 310px;
+	max-width: 100%;
+	overflow: hidden;
 	margin: 0 auto;
-	padding: 5px;
 }
 
-.album__description {
+.album__fullsize-preview {
+	min-height: 310px;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.album__fullsize-wrapper--hidden {
+	display: none;
+}
+
+.album__fullsize-description {
 	display: flex;
 	margin: 0.8em auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 300px;
+	max-width: 100%;
 	min-height: 75px;
 	font-size: 1.3em;
 }
 
-.album__thumbnail {
-	display: flex;
-	overflow: clip;
-	align-items: center;
-	flex-flow: column;
-	width: 100px;
-	height: 100px;
-	margin-bottom: 20px;
-}
-
-.album__preview-panel {
+.album__thumbnails-panel {
 	display: flex;
 	flex-flow: row wrap;
 	max-width: 800px;
@@ -128,32 +132,25 @@ ul, li, a {
 	justify-content: space-around;
 }
 
-.album__image-preview {
+.album__thumbnail {
+	height: 75px;
+	width: 75px;
+	border-radius: 30%;
+	object-fit: cover;
 	margin: 5px;
-	padding: 0;
-	border: 0;
-	background: none;
 	transition-property: scale, opacity;
 	transition-duration: 0.15s;
 	transform-origin: center;
-	height: 95%;
-	width: 95%;
 }
 
-.album__image-preview:hover,
-.album__image-preview:focus {
+.album__thumbnail:hover,
+.album__thumbnail:focus {
 	scale: 1.1;
 	opacity: 50%;
 	filter: blur(0.5px);
 }
 
-.album__image-preview img,
-.album__image-preview video {
-	object-fit: cover;
-	width: 75px;
-	height: 75px;
-	border-radius: 40%;
-}
+
 
 /* Footer */
 .footer {
