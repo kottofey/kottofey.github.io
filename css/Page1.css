@@ -1,86 +1,131 @@
 body {
 	font-family: "Georgia", serif;
-	/*width: calc(100vw - 6px);*/
-	/*height: calc(100vh - 6px);*/
-	/*border: 3px dotted black;*/
-	/*margin: 0;*/
 }
 
-.nav {
-	box-shadow: black 30px 30px 100px -50px;
-	border: 1px black solid;
-	margin: 5px auto 15px;
-	height: 100px;
-	width: 700px;
-	display: flex;
-	color: #0076B6;
-	padding: 10px;
-	justify-content: space-evenly;
+/*Resetting values*/
+html {
+	font-family: "TT Lakes", Arial, sans-serif;
+	box-sizing: border-box;
 }
 
-nav a, nav a:visited {
-	text-decoration: none;
-	color: #255A9B;
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
-nav li {
-	border: rgb(37 90 155 / 0%) 2px solid;
-	border-radius: 30px;
-	font-size: 25px;
-	text-decoration: none;
-	color: #255A9B;
+ul,
+li,
+body,
+p,
+button {
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	padding: 0.8em 0.5em;
-	margin: auto;
+	border: none;
+	font: inherit;
 }
 
-nav li:hover {
-	padding: 0.8em 0.5em;
-	border: rgb(37 90 155 / 30%) 2px solid;
-	border-radius: 30px;
-	/*margin: 0;*/
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
 }
 
-nav li:first-of-type::before {
-	content: "";
-	padding-left: 1.2em;
-	background: url("/icons/home.svg") no-repeat;
-	background-size: contain;
-	width: min-content;
-	height: min-content;
-	/*border: 2px dashed darkblue;*/
+/* Logo Slider */
+.brands-repair-list {
+	position: relative;
 }
 
-.main-card {
-	border: solid 1px black;
-	box-shadow: black 30px 30px 100px -50px;
-	width: calc(700px - 15px - 15px);
-	padding: 0 15px;
-	height: 700px;
-	margin: auto;
-	background-size: contain;
-	/*background: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg') no-repeat 50% 50%;*/
-	
+.brands-repair-list__card--lenovo {
+	background: url('../imgs/logos/Lenovo.svg') no-repeat;
 }
 
-
-img {
-	opacity: 80%;
-	border: red 3px solid;
+.brands-repair-list__card--samsung {
+	background: url('../imgs/logos/Samsung.svg') no-repeat;
 }
 
-.main-card p:first-of-type {
-	color: red;
+.brands-repair-list__card--apple {
+	background: url('../imgs/logos/Apple.svg') no-repeat;
 }
 
-.homepage {
+.brands-repair-list__card--viewsonic {
+	background: url('../imgs/logos/ViewSonic.svg') no-repeat;
 }
 
-
-.test-priority p {
-	color: blueviolet !important;
+.brands-repair-list__card--bosch {
+	background: url('../imgs/logos/Bosch.svg') no-repeat;
 }
 
-.test-not-important p {
-	color: green;
+.brands-repair-list__card--hp {
+	background: url('../imgs/logos/HelpPlease.svg') no-repeat;
+}
+
+.brands-repair-list__card--acer {
+	background: url('../imgs/logos/Acer.svg') no-repeat;
+}
+
+.brands-repair-list__card--sony {
+	background: url('../imgs/logos/Sony.svg') no-repeat;
+}
+
+.brands-repair-list__card {
+	display: flex;
+	position: relative;
+	flex: 0 0 238px;
+	height: 72px;
+	/*margin-right: 16px;*/
+	border: 1px red solid;
+	background-color: #fff !important;
+	background-position: 20px center;
+}
+
+.brands-repair-list__title {
+	margin: 16px auto 40px 32px;
+	text-transform: uppercase;
+}
+
+.brands-repair-list__more-btn {
+	margin-left: 48px;
+	margin-top: 24px;
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.brands-repair-list__more-btn::before {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 3px;
+	height: 5px;
+	width: 5px;
+	rotate: 45deg;
+	box-shadow: 1px 1px 0 0 #5df6dc,
+	3px 3px 0 0 #f8f8f8,
+	4px 4px 0 0 #5df6dc;
+}
+
+.brands-repair-list__less-btn {
+	margin-left: 48px;
+	margin-top: 24px;
+	background-color: #f8f8f8;
+	position: relative;
+}
+
+.brands-repair-list__less-btn::before {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 13px;
+	height: 5px;
+	width: 5px;
+	rotate: 225deg;
+	box-shadow: 1px 1px 0 0 #5df6dc,
+	3px 3px 0 0 #f8f8f8,
+	4px 4px 0 0 #5df6dc;
+}
+
+.brands-repair-list--wide-screen {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	width: 100%;
+	/*margin-left: 32px;*/
+	overflow: hidden;
 }
