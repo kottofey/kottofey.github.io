@@ -9,12 +9,17 @@
 </head>
 <body>
 <div class="wrapper">
-	<div class="wheel">
-		<div class="line line-1"></div>
-		<div class="line line-2"></div>
-		<div class="line line-3"></div>
-		<div class="line line-4"></div>
-	</div>
+		<button class="button" type="button">Жмак</button>
+		<p class="text hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequatur doloribus fuga impedit iusto, unde. Ab asperiores atque consectetur consequuntur eum excepturi explicabo maiores natus quo, sit voluptas voluptatem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nihil, officia? Architecto dolorum eius hic illum ipsa mollitia quas quis sint? A delectus deserunt dicta dolorum id inventore odio! Cum, cumque delectus distinctio eos esse et exercitationem, expedita incidunt itaque molestiae mollitia nostrum odio optio pariatur quibusdam quis, sit soluta.</p>
 </div>
+
+<script>
+	const btn = document.querySelector('.button');
+	const text = document.querySelector('.text');
+
+	btn.addEventListener('click', function () {
+		text.classList.toggle('hidden');
+	});
+</script>
 </body>
 </html>

@@ -2,25 +2,67 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="/css/Page3.css">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="/css/Page3.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
-	<div class="share">
-		<b>Соцсети</b>
-		<a class="social social-vk" href="https://vk.com/htmlacademy"></a>
-		<a class="social social-fb" href="https://www.facebook.com/htmlacademy"></a>
-		<a class="social social-tw" href="https://twitter.com/htmlacademy_ru"></a>
-	</div>
 
-	<div class="paginator">
-		<a href="#">Назад</a>
-		<a href="#">1</a>
-		<span>&hellip;</span>
-		<a href="#">3</a>
-		<a href="#">Вперёд</a>
+<div class="outer">
+	<img src="../imgs/Masha/1.jpeg" alt="" class="inner">
+</div>
+
+<div class="wrapper">
+	<button class="btn" type="button">Fill</button>
+	<div class="item">
+		<h2 class="title">Orig Title</h2>
+		<h3 class="value">Orig Value</h3>
 	</div>
+</div>
+
+<template class="template">
+	<div class="item">
+		<h2 class="title"></h2>
+		<h3 class="value"></h3>
+	</div>
+</template>
+
+<script>
+	const list = {
+		'pic1': {
+			'title': 'Title 1',
+			'value': 'Value 1',
+		},
+		'pic2': {
+			'title': 'Title 2',
+			'value': 'Value 2',
+		},
+	}
+
+	const wrapper = document.querySelector('.wrapper');
+	const template = document.querySelector('.template').content;
+	const btn = document.querySelector('.btn');
+
+	Object.values(list);
+	Object.keys(list);
+	Object.entries(list);
+btn.id = 'asd';
+	Object.keys(list).forEach(function (listItem) {
+		let newNode = template.cloneNode(true);
+		console.log(listItem);
+		// newNode.querySelector('.title').textContent = listItem[1].title;
+		// newNode.querySelector('.value').textContent = listItem[1].value;
+
+		newNode.addEventListener('click', function () {
+			console.log(listItem.value);
+		});
+
+		wrapper.appendChild(newNode);
+	});
+
+
+</script>
+
 </body>
 </html>
