@@ -8,56 +8,20 @@ body {
 	padding: 0;
 }
 
-.wrapper {
-	width: 500px;
-	height: 700px;
-	margin: 0 auto;
-	background-color: gray;
+.text {
 	display: flex;
-	justify-content: center;
+	width: 400px;
+	height: 150px;
+	overflow: hidden;
+	
+	border: 1px solid #000;
+	
+	/*transition-property: height;*/
+	/*transition-timing-function: ease-in-out;*/
+	/*transition-duration: 300ms;*/
+	transition: height ease-in-out 300ms;
 }
 
-.wheel {
-	margin-top: 100px;
-	position: relative;
-	width: 100px;
-	height: 100px;
-	background-color: #3698FB;
-	border-radius: 50%;
-}
-
-.wheel:hover {
-	animation: smth;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-}
-
-.line {
-	width: 100px;
-	height: 1px;
-	background-color: #000;
-	position: absolute;
-	top: 50%;
-}
-
-.line-1 {
-	transform: rotate(45deg) scaleX(1.5);
-}
-
-.line-2 {
-	transform: rotate(90deg);
-}
-
-.line-3 {
-	transform: rotate(135deg);
-}
-
-.line-4 {
-	transform: rotate(0deg);
-}
-
-@keyframes smth {
-	50% {
-		transform: rotate(180deg);
-	}
+.hidden {
+	height: 0;
 }
