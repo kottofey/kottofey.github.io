@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ФОРМА для получения электронного согласия</title>
+	<style>
+		/*Resetting values*/
+		html {
+			font-family: Times, Arial, serif;
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		ul,
+		ol,
+		li,
+		body,
+		p,
+		button,
+		textarea,
+		input,
+		select,
+		h1,
+		h2,
+		h3 {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border: none;
+			font: inherit;
+		}
+
+		a,
+		a:visited {
+			color: royalblue;
+			text-decoration: none;
+		}
+
+		body {
+			height: 100vh;
+			width: 700px;
+			margin: 0 auto;
+		}
+
+		/*	Styles	*/
+
+		.header {
+			margin: 20px;
+			font-size: 1em;
+		}
+
+		.header__paragraph {
+			text-align: right;
+		}
+
+		.header__paragraph--title {
+			margin-bottom: 5px;
+			font-size: 1.1em;
+		}
+
+		.header__paragraph--bold {
+			font-weight: bold;
+		}
+
+		.title {
+			margin: 0 auto;
+			width: 400px;
+			text-align: center;
+		}
+
+		.main-text {
+			margin: 20px;
+			line-height: 1.5em;
+		}
+
+		.main-text__paragraph {
+			text-align: justify;
+			width: 100%;
+		}
+
+		.main-text__paragraph--bold {
+			font-weight: bold;
+		}
+
+		.main-text__paragraph--italic {
+			font-style: italic;
+		}
+
+		.main-text__paragraph--underline {
+			text-decoration: underline;
+		}
+
+		.list {
+			margin-top: 10px;
+			text-align: justify;
+		}
+
+		.list__ordered-list-item {
+			list-style: decimal;
+			text-align: justify;
+
+		}
+		.list__unordered-list-item {
+			list-style: disc;
+			margin-left: 25px;
+			text-align: justify;
+		}
+
+		.main-text__paragraph--right  {
+			float: right;
+			margin-right: 200px;
+		}
+
+		.main-text__paragraph--left {
+			margin-left: 70px;
+		}
+	</style>
+</head>
+<body>
+<header class="header">
+	<h1 class="header__paragraph header__paragraph--bold header__paragraph--title">ПРИЛОЖЕНИЕ 1</h1>
+
+	<p class="header__paragraph header__paragraph--bold">к Положению</p>
+	<p class="header__paragraph header__paragraph--bold">Об обработке и защите персональных данных</p>
+	<p class="header__paragraph header__paragraph--bold">при взаимодействии со специалистами, экспертами и</p>
+	<p class="header__paragraph header__paragraph--bold">представителями сторонних организаций</p>
+	<p class="header__paragraph">(ФОРМА для получения электронного согласия)</p>
+	<hr />
+</header>
+
+<h2 class="title main-text__paragraph--bold">Согласие на обработку персональных данных, получение SMS- и email-рассылок, а также рассылок по иным каналам связи</h2>
+
+<div class="main-text">
+	<p class="main-text__paragraph">Я, </p>
+	<p class="main-text__paragraph">__________________________________________________________________________________,</p>
+	<p class="main-text__paragraph">именуемый(-ая) в дальнейшем
+		<span class="main-text__paragraph--bold main-text__paragraph--italic">«Субъект персональных данных»</span>,
+		<span class="main-text__paragraph--bold main-text__paragraph--underline">разрешаю</span></p>
+	<p class="main-text__paragraph"><span class="main-text__paragraph--bold">ООО «Нанолек»</span>
+		<span class="main-text__paragraph--italic">(ОГРН: 1117746339369, ИНН: 7701917006, юр. адрес: 127055, Москва г, Бутырский Вал ул., дом 68/70, стр. 1, этаж 2, пом. I, ком. 23-37)</span>
+		, именуемое в дальнейшем <span class="main-text__paragraph--italic main-text__paragraph--bold">«Оператор»</span>,
+		<span class="main-text__paragraph--bold main-text__paragraph--underline">обработку моих персональных данных на условиях, описанных ниже</span>:
+	</p>
+
+	<ol class="list">
+		<li class="list__ordered-list-item">Оператор осуществляет обработку моих персональных данных в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных», с целью:</li>
+	</ol>
+	<ul class="">
+		<li class="list__unordered-list-item">получения от Оператора рассылки по согласованным каналам связи информации по организуемым Оператором и третьими лицами научным мероприятиям таким как: конференции, конгрессы, обучающие семинары, лекции и другие профильные мероприятия с выставочной экспозицией и/или докладами;</li>
+		<li class="list__unordered-list-item">осуществления очного/дистанционного взаимодействия с экспертами по профильным направлениям, с целью мониторинга направлений фундаментальных и прикладных научных исследований в области разработки новых лекарственных препаратов, технологий, методов лечения.</li>
+	</ul>
+	<ol class="" start="2">
+		<li class="list__ordered-list-item">Перечень персональных данных, передаваемых мной Оператору на обработку:</li>
+	</ol>
+	<ul>
+		<li class="list__unordered-list-item">фамилия, имя, отчество;</li>
+		<li class="list__unordered-list-item">сведения об образовании;</li>
+		<li class="list__unordered-list-item">сведения о профессиональном опыте;</li>
+		<li class="list__unordered-list-item">сведения о месте работы, должность;</li>
+		<li class="list__unordered-list-item">год, месяц, дата рождения;</li>
+		<li class="list__unordered-list-item">номер телефона (служебный, мобильный);</li>
+		<li class="list__unordered-list-item">адрес электронной почты;</li>
+		<li class="list__unordered-list-item">иные данные, переданные Субъектом персональных данных в адрес Оператора и/или полученные Оператором из общедоступных источников и имеющих отношение к «Субъекту персональных данных», включая фотографии и видеоизображения.</li>
+	</ul>
+	<ol class="" start="3">
+		<li class="list__ordered-list-item">Оператор вправе обрабатывать мои персональные данные смешанным способом (т.е. как с использованием средств автоматизации, так и без них), в т.ч. производить аутентификацию Субъекта персональных данных посредством личной подписи настоящего положения, так и способами, предусмотренными ст. 5 п. 2 Федерального закона от 06.05.2011 № 63-ФЗ «Об электронной подписи». Наличие моей простой электронной подписи означает, что я даю свое согласие «Оператору» на обработку вышеуказанных персональных данных в соответствии с вышеизложенным, но при этом отказываюсь предоставить данные документа, удостоверяющего личность.</li>
+		<li class="list__ordered-list-item">Срок действия данного согласия: 25 (двадцать пять) лет с даты его предоставления.</li>
+		<li class="list__ordered-list-item">Оператор вправе осуществлять следующие действия с указанными выше персональными данными: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу, блокирование, уничтожение, обезличивание.</li>
+		<li class="list__ordered-list-item">Субъект персональных данных имеет право по письменному запросу получить информацию, касающуюся обработки его персональных данных.</li>
+		<li class="list__ordered-list-item">Субъект персональных данных вправе отозвать настоящее согласие, направив письменное уведомление Оператору.</li>
+		<li class="list__ordered-list-item">Субъект вправе направлять запросы/уведомления Оператору по адресу:</li>
+	</ol>
+	<p class="main-text__paragraph"><span class="main-text__paragraph--bold">ООО «Нанолек», юр. адрес:</span>
+		<span class="main-text__paragraph--bold main-text__paragraph--italic">127055, Москва г, Бутырский Вал ул., дом 68/70, стр. 1, этаж 2, пом. I, ком. 23-37</span>, или по электронному адресу
+		<a href="mailto:info@nanolek.ru" class="main-text__paragraph--bold">info@nanolek.ru</a></p>
+
+	<br>
+	<p class="main-text__paragraph main-text__paragraph--bold">С положением Субъект персональных данных ознакомлен:</p>
+	<br>
+	<p class="main-text__paragraph">Дата: «____» ___________ 202___ г.</p>
+	<br>
+	<p class="main-text__paragraph">/ _______________________ / ________________________________________</p>
+	<p class="main-text__paragraph main-text__paragraph--italic"><span class="main-text__paragraph--left">Подпись</span> <span class="main-text__paragraph--right">Фамилия Имя Отчество</span></p>
+
+</div>
+</body>
+</html>
